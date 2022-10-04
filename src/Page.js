@@ -12,6 +12,7 @@ export default function Page() {
 
     // Home
     if (!isHomeSubmitted) {
+        console.log("hi");
         return (
             <div className="App">
                 <form onSubmit={((event) => {
