@@ -1,0 +1,22 @@
+[
+    {
+      "coffee_shop": "Cafe Dulce",
+      "region": "USC",
+      "has_food": true
+    },
+    {
+      "coffee_shop": "Coffee MCO",
+      "region": "Koreatown",
+      "has_food": true
+    },
+    {
+      "coffee_shop": "Maru Coffee",
+      "region": "Arts District",
+      "has_food": false
+    },
+    {
+      "coffee_shop": "Verve",
+      "region": "Arts District",
+      "has_food": false
+    }
+]
