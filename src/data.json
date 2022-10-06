@@ -18,5 +18,10 @@
       "coffee_shop": "Verve",
       "region": "Arts District",
       "has_food": false
+    },
+    {
+      "coffee_shop": "Matte Black Coffee",
+      "region": "Downtown LA",
+      "has_food": false
     }
 ]

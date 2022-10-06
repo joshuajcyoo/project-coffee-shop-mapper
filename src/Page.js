@@ -1,5 +1,5 @@
+import "bootstrap/dist/css/bootstrap.css";
 import AllRegions from './AllRegions';
-
 import { useState } from 'react';
 
 export default function Page() {
@@ -18,9 +18,9 @@ export default function Page() {
                         event.preventDefault();
                         setIsHomeSubmitted(true);
                     })}>
-                    <label htmlFor="region" className="form-label">Select a coffee shop region.</label>
+                    <label htmlFor="region" className="form-label" id="region-label">Select a coffee shop region.</label>
                     <div id="region-dropdown">
-                        <select name="region" id="region" value={chosenRegion} onChange={((event) => {setChosenRegion(event.target.value);})}>
+                        <select className="form-select"  name="region" id="region" value={chosenRegion} onChange={((event) => {setChosenRegion(event.target.value);})}>
                             <option defaultValue="---">---</option>
                             {allRegions.map((region) => {
                                 return <option value={region}>{region}</option>
