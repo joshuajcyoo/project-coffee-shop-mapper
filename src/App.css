@@ -1,17 +1,155 @@
+@font-face {
+  font-family: Lobster;
+  src: url(Lobster.ttf);
+}
 .App {
-  font-family: sans-serif;
+  font-family: Lobster;
   text-align: center;
 }
 
+* {
+  background-color: #846A6A;
+  color: white;
+}
+
+
+h1 {
+  padding-top: 3%;
+  padding-bottom: 0.5%;
+  font-weight: bold;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .0em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .0em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#home-title {
+  font-size: 700%;
+}
+#welcome-message {
+  font-size: 130%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+img {
+  width: 17%;
+  margin-bottom: 1.5%;
+
+  transition: all 0.4s ease-in-out;
+  transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
 #region-label {
+  font-size: 25px;
+  margin-bottom: 1%;
+}
+#select-region {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  text-align: center;
+  
+  background-color: #A2999E;
+  color: white;
+  padding: 0.75%;
+  border: none;
+  font-size: 20px;
+  /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); */
+}
+
+
+#submit-button {
+  background-color: #EEF0F2;
   font-size: 20px;
 }
-#region {
-  width: 15%;
+
+#error-message {
+  font-size: 15px;
+  margin-bottom: 1%;
+}
+#seating-label, #day-label {
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+#open-label, #close-label{
+  margin-bottom: 0.5%;
+}
+#select-seating, #select-day, #select-open, #select-close {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1%;
+  text-align: center;
+
+  background-color: #A2999E;
+
+  color: white;
+  padding: 0.5%;
+  border: none;
+  font-size: 15px;
+  /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); */
+}
+#select-day, #select-open {
+  margin-bottom: 0.5%;
+}
+#select-seating {
+  width: 11%;
+}
+#select-day {
+  width: 15%;
+}
+#select-open, #select-close {
+  width: 13%;
 }
 
+#slidein {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+Map {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}

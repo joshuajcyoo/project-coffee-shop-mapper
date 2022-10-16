@@ -1,4 +1,4 @@
-import dataJSON from './data.json'
+import dataJSON from './data.json';
 
 export default function AllRegions() {
     const coffeeShopData = dataJSON;
@@ -12,4 +12,5 @@ export default function AllRegions() {
     })
     return allRegions;
 }
+
 
