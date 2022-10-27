@@ -147,33 +147,32 @@ img {
 #nav-title {
   padding-left: 2%;
   font-size: 60px;
-  color: white;
+  color: #A2999E;
 }
 #list-shops {
   padding-top: 3%;
 }
 table {
-  /* border: 1px solid white; */
-
   margin-left: auto;
   margin-right: auto;
-}
-#shop-title {
-  font-size: 260%;
 }
 #region-title {
   font-size: 50px;
 }
-
-Map {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+#search-info {
+  text-align: left;
+}
+.shop-title {
+  font-size: 260%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+.shop-address {
+  font-size: 120%;
+  padding-left: 9%;
+}
+.shop-hours {
+  padding-left: 9%;
+  font-size: 120%;
+  padding-top: 1%;
 }
