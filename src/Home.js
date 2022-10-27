@@ -4,27 +4,24 @@ import AllRegions from './AllRegions';
 import { AllDays, AllHours } from './DayTime';
 import image from './images/coffee-logo.png'
 import {SelectShops} from './SelectShops';
-import Map from './Map.js';
-import Read from './Read';
 
 export default function Page() {
     const allRegions = AllRegions();
     const [chosenRegion, setChosenRegion] = useState();
-    const [chosenSeating, setChosenSeating] = useState();
-    const allDays = AllDays();
-    const allHours = AllHours();
-    const [chosenOpenDay, setChosenOpenDay] = useState();
-    const [chosenOpenTime, setChosenOpenTime] = useState();
-    const [chosenCloseTime, setChosenCloseTime] = useState();
+    // const [chosenSeating, setChosenSeating] = useState();
+    // const allDays = AllDays();
+    // const allHours = AllHours();
+    // const [chosenOpenDay, setChosenOpenDay] = useState();
+    // const [chosenOpenTime, setChosenOpenTime] = useState();
+    // const [chosenCloseTime, setChosenCloseTime] = useState();
 
     const errorSelect = "Please select one of the search markers.";
     const [isHomeSubmitted, setIsHomeSubmitted] = useState(false);
     const [isResultsSubmitted, setIsResultsSubmitted] = useState(false);
-    const read = Read();
 
     function submit(event) {
         event.preventDefault();
-        if (chosenRegion || chosenSeating || chosenOpenDay) {
+        if (chosenRegion) {
             setIsHomeSubmitted(true);
         }
         else {
@@ -32,7 +29,7 @@ export default function Page() {
         }
     }
     
-    // Homeasdasdasdasasdasdasd
+    // Home
     if (!isHomeSubmitted) {    
         return (
             <div className="App">
@@ -115,14 +112,28 @@ export default function Page() {
     }
     // Results Page
     else if (!isResultsSubmitted) {
-        let returnTest = SelectShops(chosenRegion, chosenSeating);
+        let returnTest = SelectShops(chosenRegion);
         
         return (
             <div className="App">
-                <div>{returnTest}</div>
-                <div>
-                    {/* <Map/> */}
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a id="nav-title" class="navbar-brand" href="#" onClick={() => {
+                        setIsHomeSubmitted(false);
+                        setChosenRegion();
+                    }}>
+                        What's Brewing?
+                    </a>
+                </nav>
+                
+                <div id="region-title">
+                    Region: {chosenRegion}
                 </div>
+
+                <div>
+
+                </div>
+
+                <div id="list-shops">{returnTest}</div>
             </div>
         );
     }

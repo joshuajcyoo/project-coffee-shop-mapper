@@ -141,6 +141,30 @@ img {
     }
 }
 
+.navbar, #nav-title {
+  background-color: #846A6A;
+}
+#nav-title {
+  padding-left: 2%;
+  font-size: 60px;
+  color: white;
+}
+#list-shops {
+  padding-top: 3%;
+}
+table {
+  /* border: 1px solid white; */
+
+  margin-left: auto;
+  margin-right: auto;
+}
+#shop-title {
+  font-size: 260%;
+}
+#region-title {
+  font-size: 50px;
+}
+
 Map {
   margin: 0;
   padding: 0;
