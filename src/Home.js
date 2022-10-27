@@ -42,12 +42,6 @@ export default function Page() {
                     <img src={image}></img>
                 </div>
 
-                {/* <ul>
-                    {read.map((hours) => {
-                        return <li>{hours}</li>
-                    })}
-                </ul> */}
-
                 <div id="slidein">
                     <form onSubmit={submit}>
                         <div id="region-dropdown">
