@@ -111,7 +111,7 @@ export default function Page() {
         return (
             <div className="App">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a id="nav-title" class="navbar-brand" href="#" onClick={() => {
+                    <a id="nav-title" class="navbar-brand" onClick={() => {
                         setIsHomeSubmitted(false);
                         setChosenRegion();
                     }}>
