@@ -73,4 +73,6 @@ function SelectShops(region) {
     );
 }
 
+
+
 export {SelectShops};

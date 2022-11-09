@@ -1,18 +1,4 @@
-
-export function AllDays () {
-    let allDays = [];
-    allDays.push("Monday");
-    allDays.push("Tuesday");
-    allDays.push("Wednesday");
-    allDays.push("Thursday");
-    allDays.push("Friday");
-    allDays.push("Saturday");
-    allDays.push("Sunday");
-    
-    return allDays;
-}
-
-export function AllHours () {
+export default function AllHours () {
     const allNumbers = Array.from({length: 11}, (_, i) => i + 1);  
     let allHours = [];
     

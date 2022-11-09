@@ -82,25 +82,26 @@ img {
   font-size: 20px;
   /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); */
 }
-
-
 #submit-button {
   background-color: #EEF0F2;
   font-size: 20px;
 }
-
 #error-message {
   font-size: 15px;
   margin-bottom: 1%;
 }
-#seating-label, #day-label {
+
+#search-dropdowns {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#seating-label, #parking-label, #close-label, #open-label {
   margin-top: 2%;
   margin-bottom: 0.5%;
 }
-#open-label, #close-label{
-  margin-bottom: 0.5%;
-}
-#select-seating, #select-day, #select-open, #select-close {
+#select-seating, #select-open, #select-close, #select-parking {
+  width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -115,19 +116,6 @@ img {
   font-size: 15px;
   /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); */
 }
-#select-day, #select-open {
-  margin-bottom: 0.5%;
-}
-#select-seating {
-  width: 11%;
-}
-#select-day {
-  width: 15%;
-}
-#select-open, #select-close {
-  width: 13%;
-}
-
 #slidein {
   animation-duration: 4s;
   animation-name: slidein;
@@ -176,3 +164,6 @@ table {
   font-size: 120%;
   padding-top: 1%;
 }
+
+
+
