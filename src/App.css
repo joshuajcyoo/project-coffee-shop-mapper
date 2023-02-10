@@ -2,8 +2,20 @@
   font-family: Lobster;
   src: url(Lobster.ttf);
 }
+@font-face {
+  font-family: CooperHewittMedium;
+  src: url(CooperHewitt-Semibold.otf)
+}
+@font-face {
+  font-family: Kollektif;
+  src: url(Kollektif.ttf)
+}
+@font-face {
+  font-family: Minimalust;
+  src: url(MinimalustRegular.ttf)
+}
 .App {
-  font-family: Lobster;
+  font-family: CooperHewittMedium;
   text-align: center;
 }
 
@@ -17,6 +29,7 @@ h1 {
   padding-top: 3%;
   padding-bottom: 0.5%;
   font-weight: bold;
+  font-family: Lobster;
 }
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */

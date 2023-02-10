@@ -48,7 +48,8 @@ export default function Page() {
                                 Choose an LA coffee shop region to get started:
                             </label>
                             <select className="form-select" name="region" id="select-region" value={chosenRegion} onChange={((event) => {setChosenRegion(event.target.value);})}>
-                                <option defaultValue="All Regions">All Regions</option>
+                                <option value="---">---</option>
+                                <option value="All Regions">All Regions</option>
                                 {allRegions.map((region) => {
                                     return <option value={region}>{region}</option>
                                 })}

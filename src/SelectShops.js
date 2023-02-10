@@ -7,41 +7,19 @@ function SelectShops(region) {
     const today = CurrentDay();
     let selectedShops = [];
     
-    coffeeShopData.map((coffeeShop) => {
-        if (coffeeShop.region === region) {
-            selectedShops.push(coffeeShop);
-        }
-    })
+    if (region === "All Regions") {
+        coffeeShopData.map((coffeeShop) => {
+            selectedShops.push(coffeeShop)
+        })
+    }
+    else {
+        coffeeShopData.map((coffeeShop) => {
+            if (coffeeShop.region === region) {
+                selectedShops.push(coffeeShop);
+            }
+        })
+    }
     let selectedShopsHours = FormatHours(selectedShops, today);
-
-    // function formatBooleans(selectedShops) {
-    //     let allBooleans = [];
-
-    //     selectedShops.map((shop) => {
-    //         if (shop.has_food) {
-    //             allBooleans.push("Yes");
-    //         }
-    //         else {
-    //             allBooleans.push("No");
-    //         }
-
-    //         if (shop.has_outlets) {
-    //             allBooleans.push("Yes");
-    //         }
-    //         else {
-    //             allBooleans.push("No");
-    //         }
-
-    //         if (shop.has_restroom) {
-    //             allBooleans.push("Yes");
-    //         }
-    //         else {
-    //             allBooleans.push("No");
-    //         }
-
-    //         // if (shop.)
-    //     })
-    // }
 
     let currentShopNumber = 0;
 
@@ -73,6 +51,7 @@ function SelectShops(region) {
     );
 }
 
+// function SelectShopsParameters(region, open, close, seating, parking)
 
 
 export {SelectShops};
